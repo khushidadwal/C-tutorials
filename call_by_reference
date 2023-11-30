@@ -1,0 +1,18 @@
+// Enter two numbers a and b and then store a as a+b and b as a-b.
+#include<stdio.h>
+void func(int *x,int *y)
+{
+    int sum,diff;
+    sum=*x+*y;
+    diff=*x-*y;
+    *x=sum;
+    *y=diff;
+}
+int main()
+{
+    int a=4,b=3;
+    printf("a=%d and b=%d\n",a,b);
+    func(&a,&b);
+    printf("a=%d and b=%d\n",a,b);
+    return 0;
+}
