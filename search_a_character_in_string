@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+
+void slicing(char string[200],int start, int end){
+    for(int i=start;i<=end;i++){
+        printf("%c",string[i]);
+    }
+
+}
+
+int main()
+{
+    char str[100];
+    int s,e;
+    printf("Enter the string:");
+    gets(str);
+    printf("Enter the starting index:");
+    scanf("%d",&s);
+    printf("Enter the last index:");
+    scanf("%d",&e);
+    slicing(str,s,e);
+    return 0;
+}
